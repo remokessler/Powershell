@@ -20,3 +20,26 @@ Get-Service | Where-Object { $_.Status -eq 'Stopped' -and $_.StartType -eq 'Auto
 
 # use c# in powershell :: for static methods
 [Math]::Pow(10, 100);
+
+# write file to path
+Out-File ./testFolder/myFile3.md
+
+# Removes Dir.
+Remove-Item testFolder
+
+# In Script only for Script. Asking how many things should be asked for permission (should i delete the file?)
+$ConfirmPreference='None'
+
+# In Script only for Script. When 1 command throws an error, declares if it should continue or not (continue | stop | Inquire = ask how to continue)
+$ErrorActionPreference='Stop'
+$WarningPreference='Suspend'
+
+# write to console, or write to error
+
+# For user
+Write-Host 'Hello World'
+# std err
+Write-Error 'Upps.'
+Write-Warning 'watch out!'
+# std out
+Write-Output myObject
