@@ -1,26 +1,16 @@
 # cmdlet --> tab
 function Verb-Noun {
     [CmdletBinding(SupportsShouldProcess=$true)]
-    param (
-        
-    )
-    
-    begin {
-        
+    param ()
+    begin {   
     }
-    
     process {
         # if -WhatIf:$true
         if ($PSCmdlet.ShouldProcess()) {
             #do stuff
         }
-
-
     }
-    
-    end {
-        
-    }
+    end { }
 }
 
 # ex-cmdlet --> example commandlet

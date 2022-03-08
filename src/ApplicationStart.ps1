@@ -4,4 +4,4 @@ Start-Process "C:/windows/system32/dir.exe"
 ipconfig # returns a string
 
 # Regex
-ipconfig | Select-String '(?<=(IPv4.*))([0-9]{1,3}\.){3}([0-9]{1,3})' | ForEach-Object { $_.Matches.Groups[0].Value}
+ipconfig | Select-String '(?<=(IPv4.*))([0-9]{1,3}\.){3}([0-9]{1,3})' | ForEach-Object { $_.Matches.Groups[0].Value }

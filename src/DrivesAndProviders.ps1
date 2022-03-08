@@ -3,8 +3,7 @@ Get-PSProvider
 
 # changing into registry provider
 cd HKCU:
-cd Env:
-
+cd Env: 
 
 # Filter Child Items
 Get-ChildItem -Filter -Include -Exclude
